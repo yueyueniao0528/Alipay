@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>财富</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/container.css" rel="stylesheet">
+    <link href="../css/dynamic.css" rel="stylesheet">
+    <link href="../css/menus.css" rel="stylesheet">
+    <link href="../css/signal.css" rel="stylesheet">
+    <link href="../css/title.css" rel="stylesheet">
+    <link href="../css/title2.css" rel="stylesheet">
+    <link href="../css/dynamic2.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <!-- 信号层 : start -->
+        <div class="signal">
+            <div id="signal-left" class="al-center">15:00</div>
+            <div id="signal-center " class="al-center">
+                <div id="signal-center-area" class="flew-flow2">
+                    <div id="signal-center-areal" class="al-center">
+                        <div class="signal-center-area-tu">
+
+                        </div>
+                    </div>
+                    <div id="signal-center-areac" class=" al-center">
+                        <div class="signal-center-area-tu1"></div>
+                    </div>
+                    <div id="signal-center-arear" class=" al-center">
+                        <div class="signal-center-area-tu">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="signal-right" class=" ">
+                <div id="signal-area" class="">
+                    <div class="signal-ok "></div>
+                    <div class="signal-ok"></div>
+                    <div class="signal-ok"></div>
+                    <div class="signal-ok"></div>
+                    <div class="signal-no"></div>
+                </div>
+                <div id="xg" class="wc-center ">4G</div>
+            </div>
+            <div id="battery-area" class="">
+                <div id="battery-body">
+                    <div id="battery-core"></div>
+                </div>
+                <div id="battery-header"></div>
+            </div>
+        </div>
+        <!-- 信号层 : end -->
+        <!-- 标题层 : start -->
+
+        <!--<div id="title2" class=" flew-flow1">-->
+            <div id="titlet" class="">
+
+
+
+                </div>
+        <!--**********************************************************************************8-->
+        <!-- 标题层 : end -->
+
+        <!-- 主体层 : start -->
+
+
+
+        <div id="dynamic" class="">
+
+
+        </div>
+        <!-- 主体层 : end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 菜单层 : start -->
+        <div class="menus">
+
+            <div id="homepage" class="single al-center al-picture
+
+                    " data-normal="../img/支付宝1.svg" data-press="../img/支付宝.svg"
+                 data-url="../page/homepaged1.html" data-url1="" >首页</div>
+            </a>
+
+
+            <!--<div id="homepage" class="click al-center border al-picture " data-normal="../img/支付宝1.svg" data-press="../img/支付宝.svg" data-url="../page/homepaged1.html" data-url1="../page/homepaget1.html" >首页</div>-->
+            <div id="treasure" class="click  al-center  al-picture" data-normal="../img/财富.svg" data-press="../img/财富1.svg" data-url="../page/treasured1.html" data-url1="../page/treasuret1.html">财富</div>
+            <div id="pulicpraise" class="click  al-center  al-picture" data-normal="../img/口碑.svg" data-press="../img/口碑p.svg" data-url="../page/publicpraised1.html" data-url1="../page/publicpraiset1.html">口碑</div>
+            <div id="friend" class="click al-center  al-picture" data-normal="../img/朋友.svg" data-press="../img/朋友p.svg "data-url="../page/friend1.html" data-url1="../page/frienddt1.html">朋友</div>
+            <div id="mine" class="click  al-center  al-picture" data-normal="../img/我的.svg" data-press="../img/我的p.svg"data-url="../page/mined1.html"data-url1="../page/minet1.html">我的</div>
+
+
+
+
+        </div>
+
+
+        <!-- 菜单层 : end -->
+    </div>
+
+</body>
+</html>
+
+<script src="../../alipay/js/frame/jquery.js"></script>
+<script>
+
+    $(function(){
+
+        // $("#title_right").click(function(){
+        //     $("#title_menu").toggle(400);
+        // });
+        //
+        //
+        $("#dynamic").load("../page/treasured1.html");
+        $("#titlet").load("../page/treasuret1.html");
+
+
+        /*  控制底部图片*/
+        $(".menus div").each(function() {
+            $(this).css('background-image' , 'url('+$(this).data("normal")+')').css('background-size' , '30%');
+            // console.log($(this).data("normal"));
+        });
+
+        //当点击每一个
+        $(".click").click( function() {
+
+            //让所有按钮的背景  再次变为 normal 状态
+            $(".click").each(function(){
+                $(this).css('background-image' , 'url('+$(this).data("normal")+')');
+            });
+            //让被点击的层切换为  press
+            $(this).css('background-image' , 'url('+$(this).data("press")+')');
+
+
+            $("#dynamic").load($(this).data("url"))
+            $("#titlet").load($(this).data("url1"))
+
+        });
+
+        $(".single").click(function(){
+            location.href="homepage.html"
+        })
+    })
+
+
+</script>
