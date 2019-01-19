@@ -131,9 +131,9 @@ menus-centerrt{
 /*}*/
 /*****************/
 .menus-img{
-    height: 20px;
-    width: 20px;
-    margin-top: 10px;
+    height: 21px;
+    width: 21px;
+    margin-top: 15px;
     /*flex: 1;*/
 
     /*background-size: 20px;*/
@@ -145,6 +145,7 @@ menus-centerrt{
     font-family: 微软雅黑;
     color: grey;
     font-size: 12px;
+    margin-top: -8px;
 }
 #menus-img1{
     background-image: url(../img/支付宝.svg);
