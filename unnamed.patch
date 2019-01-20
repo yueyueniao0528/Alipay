@@ -1,0 +1,17 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision 131e8c953ff6e11aed7807507025b5f24120e01d)
++++ index.html	(date 1547891754234)
+@@ -5,7 +5,7 @@
+     <title>Title</title>
+ </head>
+ <body>
+-<a href="alipay/page/homepage.html"></a>
++<a href="alipay/page/homepage.html">首页</a>
+ 
+ </body>
+ </html>
+\ No newline at end of file

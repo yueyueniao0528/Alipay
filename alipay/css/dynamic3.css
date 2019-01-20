@@ -33,6 +33,7 @@
 .dynamic3-topcareatima{
     width: 26px;
     height: 26px;
+    position: relative;
 }
 #dynamic3-topcareatimg1 {
     background-image: url(../img/美食1.svg);
@@ -303,4 +304,21 @@ height: 25px;
     position: absolute;
     left:4px ;
     top:3px;
+}
+.dynamic3xiaopt{
+    width: 30px;
+    height: 15px;
+    background-color: #E65100;
+    border-radius: 15px 15px 15px 0px ;
+    position: absolute;
+    left:10px;
+    top:-5px;
+
+}
+.dynamic3xiaoptzi{
+    font-size: 1px;
+    color: white;
+    position: absolute;
+    left:4px ;
+    top:1px;
 }
